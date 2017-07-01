@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/paulpoa1/R/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Fars Functions
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This a code provided by Jhon Hopkins University Especialization Course 2017
 
-### Markdown
+When you use this functions you will be able to manipulate some accident databases from 2013, 2014 and 2015. There are five functions:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- fars_read()  ::: confirm the existence of a file
+- make_filename() ::: built the name file
+- fars_read_years() ::: manipulate database
+- fars_summarize_years() ::: makes a summary of the data
+- fars_map_state()::: makes an accident map
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# README #
 
-- Bulleted
-- List
+This packages is an assigment of the Coursera course "Building R Packages". It allows mapping test data from the US National Highway Traffic Safety Administration on traffic accidents. 
 
-1. Numbered
-2. List
+This repo includes
+* A DESCRIPTION and NAMESPACE file
+* an R/ folder where some R functions are stored in fars_functions.R
+* a man/ folder presenting the functions found in R/ and documented using Roxygen2
+* A vignettes/ folder including an example of running the functions in R/
+* A tests/ folder with a test of the functions output
 
-**Bold** and _Italic_ and `Code` text
+### Installation
 
-[Link](url) and ![Image](src)
+To install this package to run on your system, please first install and load the `devtools` package. Then install and load this package:
+
+```R
+install_github('paulpoa1/R')
+library(R)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Vignette
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/paulpoa1/R/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+To get started, read the fars vignette: `vignette('fars', package = 'Building-an-R-Package')`.
